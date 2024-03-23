@@ -1,0 +1,12 @@
+D:\Documents\Visual Studio 2022\Source\串口手柄\bin\Debug\串口手柄.exe.config
+D:\Documents\Visual Studio 2022\Source\串口手柄\bin\Debug\串口手柄.exe
+D:\Documents\Visual Studio 2022\Source\串口手柄\bin\Debug\串口手柄.pdb
+D:\Documents\Visual Studio 2022\Source\串口手柄\bin\Debug\串口手柄.xml
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.vbproj.AssemblyReference.cache
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.Form1.resources
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.Resources.resources
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.vbproj.GenerateResource.cache
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.vbproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.exe
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.xml
+D:\Documents\Visual Studio 2022\Source\串口手柄\obj\Debug\串口手柄.pdb
