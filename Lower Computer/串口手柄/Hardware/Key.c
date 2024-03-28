@@ -2,7 +2,7 @@
 #include "Delay.h"
 #include "Timer.h"
 
-#define TIMEOUT_DURATION 3000
+#define TIMEOUT_DURATION 3000//短按长按阈值控制
 
 void Key_Init(void)
 {

@@ -26,7 +26,10 @@ Public Class Form1
             ComboBox1.Items.Add(ports(i)) 'COM口列表
         Next i
         '控件初始化
-        ComboBox1.SelectedIndex = 0
+        If ComboBox1.Items.Count = 0 Then
+            Button1.Enabled = False
+        End If
+        ComboBox1.SelectedIndex = -1
         ComboBox2.SelectedIndex = 6
         ComboBox3.SelectedIndex = 3
         ComboBox4.SelectedIndex = 0
@@ -73,12 +76,21 @@ Public Class Form1
         ComboBox45.SelectedIndex = 31
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If ComboBox1.SelectedIndex < 0 Then
+            MsgBox("错误:尚未选择串口,请在选择串口后再打开它", 0 + vbCritical + vbSystemModal, "尚未选择串口")
+            Exit Sub
+        End If
         If StrComp(Button1.Text, "打开串口") = 0 Then
             Call OpenSerialPort()
-            AddHandler comm.DataReceived, AddressOf SerialPort_DataReceived
+            AddHandler comm.DataReceived, AddressOf SerialPort_DataReceived '打开串口数据接收子线程,链接事件处理过程
         ElseIf StrComp(Button1.Text, "关闭串口") = 0 Then
             Call CloseSerialPort()
         End If
+    End Sub
+    Private Sub ComboBox1_DropDown(sender As Object, e As EventArgs) Handles ComboBox1.DropDown '串口下拉框刷新事件
+        ports = SerialPort.GetPortNames
+        ComboBox1.Items.Clear()
+        ComboBox1.Items.AddRange(ports)
     End Sub
     Private Sub OpenSerialPort()
         Try

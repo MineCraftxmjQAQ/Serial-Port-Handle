@@ -20,7 +20,7 @@ int main(void)
 	AD_Init();
 	Key_Init();
 	Timer_Init();
-	HandleCalibration(&R_CenterX, &R_CenterY, &L_CenterX, &L_CenterY);
+	HandleCalibration(&R_CenterX, &R_CenterY, &L_CenterX, &L_CenterY);//摇杆初始化校准
 	OLED_ShowString(1, 1, "R_X:");
 	OLED_ShowString(2, 1, "R_Y:");
 	OLED_ShowString(3, 1, "L_X:");

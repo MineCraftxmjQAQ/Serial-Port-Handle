@@ -4,6 +4,11 @@
 #include "AD.h"
 #include "math.h"
 
+/**
+  * @brief  手柄摇杆中央值测量函数
+  * @param  接收手柄左右摇杆的X和Y轴
+  * @retval 无
+  */
 void HandleCalibration(uint16_t *R_CenterX, uint16_t *R_CenterY, uint16_t *L_CenterX, uint16_t *L_CenterY)
 {
 	uint8_t i; 
@@ -41,6 +46,11 @@ void HandleCalibration(uint16_t *R_CenterX, uint16_t *R_CenterY, uint16_t *L_Cen
 	OLED_Clear();
 }
 
+/**
+  * @brief  摇杆输出值均匀化和死区确定函数
+  * @param  输入值 输入范围 输出中央值 输出范围
+  * @retval 无
+  */
 int16_t HandleNumericMapping(uint16_t InputNum, uint16_t InputRange, uint16_t InputCentralValue, uint16_t OutputRange)
 {
 	if(InputNum < InputCentralValue)
