@@ -21,11 +21,11 @@ void HandleCalibration(uint16_t *R_CenterX, uint16_t *R_CenterY, uint16_t *L_Cen
 	*L_CenterY = 0;
 	for(i = 0; i < 30; i++)
 	{
-		*R_CenterX += AD_GetValue(ADC_Channel_1);
-		*R_CenterY += AD_GetValue(ADC_Channel_0);
-		*L_CenterX += AD_GetValue(ADC_Channel_3);
-		*L_CenterY += AD_GetValue(ADC_Channel_2);
-		Delay_ms(100);
+		*R_CenterX += AD_Value[1];
+		*R_CenterY += AD_Value[0];
+		*L_CenterX += AD_Value[3];
+		*L_CenterY += AD_Value[2];
+		Delay_ms(10);
 	}
 	*R_CenterX = floor(*R_CenterX / 30);
 	*R_CenterY = floor(*R_CenterY / 30);

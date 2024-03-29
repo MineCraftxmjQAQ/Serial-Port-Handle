@@ -8,7 +8,6 @@
 #include "math.h"
 #include "Timer.h"
 
-uint16_t AD0, AD1, AD2, AD3;;
 uint16_t R_CenterX, R_CenterY, L_CenterX, L_CenterY;
 int16_t R_X, R_Y, L_X, L_Y;
 uint8_t KeyNum, temp;
@@ -27,14 +26,10 @@ int main(void)
 	OLED_ShowString(4, 1, "L_Y:");
 	while (1)
 	{
-		AD0 = AD_GetValue(ADC_Channel_1);
-		AD1 = AD_GetValue(ADC_Channel_0);
-		AD2 = AD_GetValue(ADC_Channel_3);
-		AD3 = AD_GetValue(ADC_Channel_2);
-		R_X = HandleNumericMapping(AD0, 4096, R_CenterX, 1000);
-		R_Y = HandleNumericMapping(AD1, 4096, R_CenterY, 1000);
-		L_X = HandleNumericMapping(AD2, 4096, L_CenterX, 1000);
-		L_Y = HandleNumericMapping(AD3, 4096, L_CenterY, 1000);
+		R_X = HandleNumericMapping(AD_Value[1], 4096, R_CenterX, 1000);
+		R_Y = HandleNumericMapping(AD_Value[0], 4096, R_CenterY, 1000);
+		L_X = HandleNumericMapping(AD_Value[3], 4096, L_CenterX, 1000);
+		L_Y = HandleNumericMapping(AD_Value[2], 4096, L_CenterY, 1000);
 		OLED_ShowSignedNum(1, 5, R_X, 4);
 		OLED_ShowSignedNum(2, 5, R_Y, 4);
 		OLED_ShowSignedNum(3, 5, L_X, 4);
