@@ -1,0 +1,34 @@
+.\objects\handle.o: Hardware\Handle.c
+.\objects\handle.o: .\Start\stm32f10x.h
+.\objects\handle.o: .\Start\core_cm3.h
+.\objects\handle.o: D:\Program Files\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\handle.o: .\Start\system_stm32f10x.h
+.\objects\handle.o: .\User\stm32f10x_conf.h
+.\objects\handle.o: .\Library\stm32f10x_adc.h
+.\objects\handle.o: .\Start\stm32f10x.h
+.\objects\handle.o: .\Library\stm32f10x_bkp.h
+.\objects\handle.o: .\Library\stm32f10x_can.h
+.\objects\handle.o: .\Library\stm32f10x_cec.h
+.\objects\handle.o: .\Library\stm32f10x_crc.h
+.\objects\handle.o: .\Library\stm32f10x_dac.h
+.\objects\handle.o: .\Library\stm32f10x_dbgmcu.h
+.\objects\handle.o: .\Library\stm32f10x_dma.h
+.\objects\handle.o: .\Library\stm32f10x_exti.h
+.\objects\handle.o: .\Library\stm32f10x_flash.h
+.\objects\handle.o: .\Library\stm32f10x_fsmc.h
+.\objects\handle.o: .\Library\stm32f10x_gpio.h
+.\objects\handle.o: .\Library\stm32f10x_i2c.h
+.\objects\handle.o: .\Library\stm32f10x_iwdg.h
+.\objects\handle.o: .\Library\stm32f10x_pwr.h
+.\objects\handle.o: .\Library\stm32f10x_rcc.h
+.\objects\handle.o: .\Library\stm32f10x_rtc.h
+.\objects\handle.o: .\Library\stm32f10x_sdio.h
+.\objects\handle.o: .\Library\stm32f10x_spi.h
+.\objects\handle.o: .\Library\stm32f10x_tim.h
+.\objects\handle.o: .\Library\stm32f10x_usart.h
+.\objects\handle.o: .\Library\stm32f10x_wwdg.h
+.\objects\handle.o: .\Library\misc.h
+.\objects\handle.o: .\System\Delay.h
+.\objects\handle.o: Hardware\OLED.h
+.\objects\handle.o: Hardware\AD.h
+.\objects\handle.o: D:\Program Files\Keil5\ARM\ARMCC\Bin\..\include\math.h

@@ -270,7 +270,7 @@ void OLED_ShowBinNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Leng
   * @param  Length 要显示数字，将会与1000相比，范围：-1000~1000
   * @retval 无
   */
-void OLED_DrawHorizontalLine(uint8_t Line, int16_t Length)
+void OLED_DrawHorizontalLine(uint8_t Line, int32_t Length)
 {
 	int16_t DrawLength, temp, tmp;
 	uint16_t i, j;
